@@ -1,0 +1,32 @@
+.tag {
+  font-size: 0.9rem;
+  font-weight: normal !important;
+  color: #343a40 !important;
+  background-color: #FFA474;
+  border-radius: 12px;
+  padding: 3px 10px;
+}
+.tags-list {
+  position: absolute;
+  max-height: 390px;
+  border: 1px solid var(--color3);
+  border-radius: 5px;
+  background-color: white;
+  z-index: 999;
+  overflow-y: scroll;
+}
+.tag-list-item {
+  padding: 7px 10px;
+  cursor: pointer;
+}
+.tag-list-item:hover {
+  background-color: var(--color3);
+}
+
+/* Adaptation */
+@media screen and (min-width: 576px) {
+  .tags-list {
+    min-width: 220px !important;
+    max-width: 220px !important;
+  }
+}

@@ -1,0 +1,44 @@
+.alert {
+  --bs-alert-padding-y: 0.5rem !important;
+  --bs-alert-padding-x: 0.5rem !important;
+  font-size: 0.9rem;
+  padding: 6px 8px !important;
+}
+.pop-up {
+  max-width: 120px;
+  position: absolute !important;
+  text-align: center;
+}
+.alert-error-profile {
+  margin-right: 6px !important;
+  margin-left: 6px !important;
+}
+
+/* Animation */
+#alert {
+  top: 3rem;
+  animation: alert-pop-up 500ms ease-in-out;
+}
+@keyframes alert-pop-up {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
+/* Adaptation */
+@media screen and (max-width: 991px) {
+  .alert-error-profile {
+    margin-right: 0px !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .alert-error-profile {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+}

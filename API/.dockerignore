@@ -1,0 +1,7 @@
+logs/*
+tests
+test.py
+Dockerfile
+.dockerignore
+.env
+.env.template

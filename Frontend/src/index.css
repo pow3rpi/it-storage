@@ -1,0 +1,129 @@
+/* Redefining default bootstrap styles and setting common colors */
+:root {
+  --bs-tertiary-bg-rgb: white !important;
+  --color1: #E2E8F0;
+  --color2: rgba(0, 0, 0, 0.125);
+  --color3: #ced4da;
+}
+.container-fluid {
+  --bs-gutter-x: 0 !important;
+}
+
+/* Tag styles */
+textarea {
+  resize: none !important;
+}
+textarea#link-annotation {
+    min-height: 150px !important;
+}
+textarea#tutorial-file {
+    min-height: 500px !important;
+}
+textarea.form
+:where(textarea, input):focus {
+  border: 1px solid #9ec5fe !important;
+}
+
+/* General styles */
+.body-size {
+  min-height: calc(100vh - 66px - 166px) !important;
+}
+.nav-link {
+  cursor: pointer;
+}
+.active-page {
+  color: rgba(0, 0, 0, 0.7) !important;
+}
+.not-found-img {
+  margin-top: 100px;
+  width: 450px;
+  height: 300px;
+  margin-left: calc(50vw - 225px);
+}
+.required-field {
+  color: red !important;
+}
+.markdown {
+  border: 1px solid var(--color3) !important;
+  border-radius: 0.375rem;
+  padding: 0.375rem 0.75rem;
+  word-wrap: break-word;
+}
+
+/* Buttons and Icons */
+.btn-standard {
+  min-width: 100px;
+}
+.btn-danger {
+  background-color: #f85149;
+  border-color: #f85149;
+}
+.btn-danger:hover {
+  background-color: #d3443d;
+  border-color: #d3443d;
+}
+.btn-close {
+  box-shadow: none !important;
+  height: 11px !important;
+  width: 11px !important;
+  padding: 0px !important;
+  border-radius: 0px !important;
+}
+.btn-close,
+.btn-close:focus,
+.btn-close:hover,
+.btn-close:active {
+  opacity: 0.6 !important;
+}
+.btn-create:hover {
+  color: rgba(101,108,133,0.8) !important;
+}
+.btn-back,
+.btn-create,
+.icon-edit,
+.icon-trash,
+.icon-cancel,
+.icon-accept {
+  cursor: pointer;
+}
+.icon-edit:hover,
+.btn-back:hover {
+  color: rgba(101,108,133,0.8);
+}
+.icon-trash:hover,
+.icon-cancel:hover {
+  color: red;
+}
+.icon-cancel {
+  color: #dc3545;
+}
+.icon-accept {
+  color: green;
+}
+.icon-accept:hover {
+  color: #32cd32;
+}
+.icon-content-panel {
+  font-size: 25px !important;
+  line-height: 25px !important;
+}
+.icon-search-panel {
+  font-size: 20px !important;
+  line-height: 20px !important;
+}
+
+
+/* Adaptation */
+@media screen and (min-width: 992px) {
+  .body-size {
+    min-height: calc(100vh - 69px - 53px) !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .not-found-img {
+    margin-top: 20px;
+    width: 300px;
+    height: 200px;
+    margin-left: calc(50vw - 150px);
+  }
+}

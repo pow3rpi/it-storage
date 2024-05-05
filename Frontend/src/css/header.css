@@ -1,0 +1,23 @@
+header {
+  box-shadow: 0px 1px 3px var(--color1);
+  border-bottom: 1px solid var(--color1);
+}
+header img {
+  max-width: 40px;
+  max-height: 40px;
+}
+.log-out-pos {
+  padding-right: 0px !important;
+}
+
+/* Adaptation */
+@media screen and (min-width: 992px) {
+  .logo {
+    margin-bottom: 0.2rem !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .project-name {
+    vertical-align: middle !important;
+  }
+}
